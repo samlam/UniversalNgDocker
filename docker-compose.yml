@@ -1,14 +1,14 @@
 version: "3"
 
 services:
-  # node-build-local:
-  #   build: ./nodeBuild
   web:
     # image: node-build-local
-    build: ./web
+    build: 
+      context: ./web
+      dockerfile: Dockerfile
     volumes:
-      - ./web:/base
-    #command: pwd && ls -la && nodemon -L --inspect=0.0.0.0:5858
+      - ./web:/app
+    #command: ash -c "pwd && ls -la && npm install"
     command: nodemon ./dist/server.js --watch --inspect=0.0.0.0:5858
     ports:
       - "8000:4200"
