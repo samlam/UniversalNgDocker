@@ -9,7 +9,7 @@
     "build:client": "ng build -prod --build-optimizer --app 0",
     "build:aot": "ng build --aot --app 1",
     "build:server": "webpack -p",
-    "start:server" : "node dist/server.js",
+    "start:server": "node dist/server.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

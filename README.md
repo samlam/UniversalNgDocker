@@ -1,5 +1,13 @@
 ## debug start
 
 ```
-docker-compose up -d
+cd ./web
+
+npm install
+
+npm run build
+
+cd ..
+
+docker-compose up
 ```

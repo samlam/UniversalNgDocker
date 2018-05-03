@@ -8,8 +8,8 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./web:/app
-    #command: ash -c "pwd && ls -la && npm install"
+    # command: ash -c "pwd && ls -la && node dist/server.js"
     command: nodemon ./dist/server.js --watch --inspect=0.0.0.0:5858
     ports:
       - "8000:4200"
-
+      - "5858:5858"
