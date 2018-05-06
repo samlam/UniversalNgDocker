@@ -2,14 +2,16 @@ version: "3"
 
 services:
   web:
-    # image: node-build-local
+    container_name: web
     build: 
       context: ./web
       dockerfile: Dockerfile
     volumes:
-      - ./web:/app
+      - './web:/app'
+      #- '/app/node_modules'
     # command: ash -c "pwd && ls -la && node dist/server.js"
-    command: nodemon ./dist/server.js --watch --inspect=0.0.0.0:5858
+    # command: nodemon ./dist/server.js --watch ./dist --inspect=0.0.0.0:5858
+    command: ng serve
     ports:
       - "8000:4200"
       - "5858:5858"

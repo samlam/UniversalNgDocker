@@ -21,5 +21,10 @@ module.exports = {
     rules: [
       { test: /\.ts$/, loader: 'ts-loader' }
     ]
+  },
+  watchOptions: {
+    ignored: /node_modules/,
+    aggregateTimeout: 200,
+    poll: 500
   }
 }

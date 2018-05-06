@@ -1,7 +1,8 @@
-FROM node-build-local AS build
+FROM node:8.11-alpine AS build
 WORKDIR /app
-# RUN npm install -g npm@latest
-# RUN npm install -g nodemon@1.17.0
+RUN npm install -g npm@latest
+RUN npm install -g @angular/cli
+RUN npm install -g nodemon@1.17.0
 
 # COPY package.json /base/package.json
 # RUN npm install
@@ -17,4 +18,4 @@ EXPOSE 4200
 
 # CMD ["node", "dist/server.js"]
 
-CMD ls
+ENTRYPOINT ["tail", "-f", "/dev/null"]
