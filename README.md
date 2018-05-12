@@ -1,4 +1,4 @@
-
+# README
 
 ## local dev machine
 
@@ -29,9 +29,4 @@ navigate to `localhost:8000`
 browser-sync ui is running on `http://localhost:3001/`
 
 
-experimental
-
-```
-docker container run --name ung1a --rm -it -v //c/Temp/UniversalNg1a/web:/app -p 8000:4200 -d universalng1a_web
-docker exec -it ung1a ash
-```
+## [TODO](./TODO.md)
