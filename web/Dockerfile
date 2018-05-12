@@ -5,21 +5,12 @@ RUN npm install -g @angular/cli
 RUN npm install -g nodemon@1.17.0
 RUN npm install -g browser-sync
 
-# COPY package.json /base/package.json
-# RUN npm install
 
-RUN ls -la
-# COPY . /base
-# RUN npm run build
-
-# FROM node-build-local AS final
-# WORKDIR /app
 EXPOSE 4200
 EXPOSE 8000
 EXPOSE 3001
 EXPOSE 8001
-# COPY --from=build /base .
+EXPOSE 5858
 
-# CMD ["node", "dist/server.js"]
-
-# ENTRYPOINT ["tail", "-f", "/dev/null"]
+CMD nodemon -L ./dist/server.js --inspect=0.0.0.0:5858 \
+    & browser-sync start -c 'bs-config.js'

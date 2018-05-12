@@ -8,12 +8,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - './web:/app'
-      #- '/app/node_modules'
-    # command: ash -c "pwd && ls -la && node dist/server.js"
-    # command: ash -c "nodemon -L ./dist/server.js --watch ./dist --inspect=0.0.0.0:5858 & browser-sync start --proxy 0.0.0.0:4200 --no-open --port 8000 --files 'dist/**/*'"
-    # command: ash -c "nodemon ./dist/server.js --inspect=0.0.0.0:5858 & browser-sync start --proxy 0.0.0.0:4200 --no-open --port 8000 --watch --files='dist/**/*'"
-    command: ash -c "nodemon -L ./dist/server.js --watch ./dist/server.js --inspect=0.0.0.0:5858 & browser-sync start -c 'bs-config.js'"
-    # command: browser-sync start --server 'dist/server.js' --no-open --port 8000 --files 'dist/**/*'
+    #command: ash -c "nodemon -L ./dist/server.js --watch ./dist/server.js --inspect=0.0.0.0:5858 & browser-sync start -c 'bs-config.js'"
     
     ports:
       - "8000:8000"

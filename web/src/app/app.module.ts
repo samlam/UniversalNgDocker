@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     //BrowserModule
-    BrowserModule.withServerTransition({ appId: 'doc-ng' })
+    BrowserModule.withServerTransition({ appId: 'ng-container' })
   ],
   providers: [],
   bootstrap: [AppComponent]

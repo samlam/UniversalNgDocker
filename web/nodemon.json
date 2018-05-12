@@ -2,17 +2,19 @@
     "restartable": "rs",
     "ignore": [
         ".git",
-        "node_modules/**/node_modules"
+        "node_modules/**/*"
     ],
     "verbose": true,
     "execMap": {
         "js": "node --harmony"
     },
     "watch": [
-        "dist/"
+        "dist/browser",
+        "dist/server",
+        "dist"
     ],
     "env": {
         "NODE_ENV": "development"
     },
-    "ext": "js,json,html,css"
+    "ext": "html js json css"
 }
