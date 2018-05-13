@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { ConfigService } from '../services/config.service';
 
 @NgModule({
   declarations: [
@@ -9,9 +10,12 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     //BrowserModule
-    BrowserModule.withServerTransition({ appId: 'ng-container' })
+    BrowserModule.withServerTransition({ appId: 'ng-container' }),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    ConfigService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

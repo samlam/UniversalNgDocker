@@ -1,9 +1,10 @@
 # TODO
 
+* [x] add a simple feature toggle
 * [ ] upgrade to ng6
-* [ ] unit and e2e test continously
 * [ ] debug with vscode
-
+* [ ] unit and e2e test continously
+* [ ] add compodoc
 
 
 # experimental
