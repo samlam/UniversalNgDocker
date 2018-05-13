@@ -1,20 +1,24 @@
 {
+    "legacyWatch":true,
     "restartable": "rs",
     "ignore": [
         ".git",
-        "node_modules/**/*"
+        "./node_modules/**/*"
     ],
     "verbose": true,
     "execMap": {
         "js": "node --harmony"
     },
+    "execOptions":{
+        "args":["--inspect=0.0.0.0:5858"]
+    },
     "watch": [
-        "dist/browser",
-        "dist/server",
-        "dist"
+        "./dist/server.js",
+        "./dist"
     ],
     "env": {
         "NODE_ENV": "development"
     },
-    "ext": "html js json css"
+    "ext": "html,js,json,css",
+    "dump": false
 }

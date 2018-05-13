@@ -12,5 +12,5 @@ EXPOSE 3001
 EXPOSE 8001
 EXPOSE 5858
 
-CMD nodemon -L ./dist/server.js --inspect=0.0.0.0:5858 \
+CMD nodemon  \
     & browser-sync start -c 'bs-config.js'
