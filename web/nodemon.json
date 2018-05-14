@@ -9,9 +9,7 @@
     "execMap": {
         "js": "node --harmony"
     },
-    "execOptions":{
-        "args":["--inspect=0.0.0.0:5858"]
-    },
+    "execOptions":{},
     "watch": [
         "./dist/server.js",
         "./dist"
@@ -20,5 +18,6 @@
         "NODE_ENV": "development"
     },
     "ext": "html,js,json,css",
+    "args":["--inspect=0.0.0.0:5858"],
     "dump": false
 }

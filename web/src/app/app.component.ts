@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, VERSION } from '@angular/core';
 import { ConfigService } from '../services/config.service';
-import { IConfig } from '../models/Config';
+import { Config } from '../models/Config';
 
 @Component({
   selector: 'app-root',
@@ -10,15 +10,15 @@ import { IConfig } from '../models/Config';
 export class AppComponent {
   title = 'smartApp';
   name = 'Developers';
+  angularVersion = VERSION.full;
   features:string[] = null;
 
   constructor(private cfgSvc:ConfigService){}
 
   ngOnInit(){
-    this.cfgSvc.get().subscribe((data:IConfig) => {
+    this.cfgSvc.get().subscribe((data:Config) => {
       this.features = data.features;
     });
 
   }
-
 }

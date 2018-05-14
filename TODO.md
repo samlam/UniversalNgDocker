@@ -1,11 +1,12 @@
 # TODO
 
 * [x] add a simple feature toggle
+* [x] debug with vscode (js only)
 * [ ] upgrade to ng6
-* [ ] debug with vscode
+    * [ ] ng run server architect with watch
 * [ ] unit and e2e test continously
 * [ ] add compodoc
-
+* [ ] server-side debug against ts files
 
 # experimental
 
