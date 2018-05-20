@@ -1,8 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ErrorHandler } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ConfigService } from '../services/config.service';
+import { ErrorsHandler } from '../services/err-handler.service';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ConfigService } from '../services/config.service';
     HttpClientModule
   ],
   providers: [
-    ConfigService
+    ConfigService,
+    {provide: ErrorHandler, useClass: ErrorsHandler}
   ],
   bootstrap: [AppComponent]
 })

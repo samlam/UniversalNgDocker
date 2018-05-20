@@ -13,7 +13,7 @@
 npm install -g npm@6.0.0 @angular/cli nodemon@1.17.0 browser-sync
 ```
 
-## debug start
+## dev start
 
 ```bash
 cd ./web
@@ -55,7 +55,7 @@ The project runs on express. Run these watchers to enable backend live-reload, t
 npm run build:devaot
 npm run build:devserver
 ```
-
+---
 ## restart nodemon
 
 to restart nodemon without bringing the compose up/down; first access the container interactively, then send the kill -1 command to the nodemon process by its PID

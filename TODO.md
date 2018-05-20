@@ -5,11 +5,14 @@
 * [x] update nginx to serve default landing page
 * [x] update nginx to serve web as micro-site
 * [x] browser sync with nginx
+* [x] fix express 404
+* [ ] ng global intercept
 * [ ] upgrade to ng6
     * [ ] ng run server architect with watch
 * [ ] unit and e2e test continously
 * [ ] add compodoc
 * [ ] server-side debug against ts files
+* [ ] transpile root location path in nginx.conf
 
 # experimental
 
