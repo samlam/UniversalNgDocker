@@ -42,7 +42,7 @@ nginx -c ~/UniversalNgDockerStarter/nginx.conf
 
 ## web browser
 
-navigate to landing page `http://localhost/` 
+navigate to micro-site `http://localhost/web` 
 
 browser-sync ui is running on `http://localhost:3001/`
 
