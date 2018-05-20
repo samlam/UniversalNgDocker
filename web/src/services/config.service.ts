@@ -3,7 +3,8 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class ConfigService {
-  configUrl = '/assets/config.json'
+  appBaseUrl = '/web';
+  configUrl = this.appBaseUrl + '/assets/config.json';
 
   constructor(private http: HttpClient) { }
 

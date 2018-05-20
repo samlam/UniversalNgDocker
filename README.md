@@ -29,9 +29,20 @@ npm run build:dev
 docker-compose up
 ```
 
+## setup reverse proxy
+We use nginx to configure reverse proxy for the micro-site, which is served as directory route; a sample nginx.conf is already provided. Download nginx [here](https://nginx.org/en/download.html?)
+
+```
+c:\nginx\install\path\nginx.exe -c C:\Users\developer\Documents\UniversalNgDockerStarter\nginx.conf
+```
+or
+```bash
+nginx -c ~/UniversalNgDockerStarter/nginx.conf
+```
+
 ## web browser
 
-navigate to `localhost:8000`
+navigate to landing page `http://localhost/` 
 
 browser-sync ui is running on `http://localhost:3001/`
 

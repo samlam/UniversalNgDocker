@@ -2,6 +2,9 @@
 
 * [x] add a simple feature toggle
 * [x] debug with vscode (js only)
+* [x] update nginx to serve default landing page
+* [x] update nginx to serve web as micro-site
+* [x] browser sync with nginx
 * [ ] upgrade to ng6
     * [ ] ng run server architect with watch
 * [ ] unit and e2e test continously

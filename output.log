@@ -1,0 +1,26 @@
+Attaching to web
+[36mweb    |[0m [33m[nodemon] 1.17.0[39m
+[36mweb    |[0m [33m[nodemon] reading config ./nodemon.json[39m
+[36mweb    |[0m [33m[nodemon] to restart at any time, enter `rs`[39m
+[36mweb    |[0m [33m[nodemon] or send SIGHUP to 6 to restart[39m
+[36mweb    |[0m [33m[nodemon] ignoring: .git ./node_modules/**/*[39m
+[36mweb    |[0m [33m[nodemon] watching: ./dist/server.js /app/dist/**/*[39m
+[36mweb    |[0m [33m[nodemon] watching extensions: html,js,json,css[39m
+[36mweb    |[0m [32m[nodemon] starting `node --harmony --inspect=0.0.0.0:5858 ./dist/server.js`[39m
+[36mweb    |[0m [33m[nodemon] spawning[39m
+[36mweb    |[0m [33m[nodemon] child pid: 24[39m
+[36mweb    |[0m Debugger listening on ws://0.0.0.0:5858/fbe2e248-a821-4a93-9787-ca65b464cd62
+[36mweb    |[0m For help see https://nodejs.org/en/docs/inspector
+[36mweb    |[0m [33m[nodemon] watching 15 files[39m
+[36mweb    |[0m [Browsersync] Proxying: http://localhost:4200
+[36mweb    |[0m [Browsersync] Access URLs:
+[36mweb    |[0m  -----------------------------------
+[36mweb    |[0m        Local: http://localhost:8000
+[36mweb    |[0m     External: http://172.18.0.2:8000
+[36mweb    |[0m  -----------------------------------
+[36mweb    |[0m           UI: http://localhost:3001
+[36mweb    |[0m  UI External: http://172.18.0.2:3001
+[36mweb    |[0m  -----------------------------------
+[36mweb    |[0m [Browsersync] Watching files...
+[36mweb    |[0m listening .......... on http://localhost:4200!
+Gracefully stopping... (press Ctrl+C again to force)
