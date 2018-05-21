@@ -35,7 +35,7 @@ module.exports = {
         target: "http://localhost:4200",
         proxyRes: [
             function(proxyRes, req, res) {
-                console.log('bs - ', req.method, req.url, proxyRes.statusCode);
+                console.log('bs -', req.method, req.url, proxyRes.statusCode);
                 //console.log(util.inspect(proxyRes, { compact: true, depth: 1, breakLength: 80 }) );
             }
         ]
